@@ -5,15 +5,15 @@ import 'package:junior_test/model/RootResponse.dart';
 import 'package:junior_test/resources/api/repository.dart';
 import 'package:rxdart/rxdart.dart';
 
-class ActionsItemQueryBloc extends BaseBloc {
+class ActionsHomeQueryBloc extends BaseBloc {
   final _controller = BehaviorSubject<RootResponse>();
   final _client = Repository();
 
-  Stream<RootResponse> get shopItemContentStream => _controller.stream;
+  Stream<RootResponse> get shopHomeContentStream => _controller.stream;
 
-  void loadActionItemContent(int id) async {
+  void loadHomeItemsContent(int page) async {
     // 1
-    final results = await _client.fetchActionInfo(id);
+    final results = await _client.fetchHomeInfo(page);
     addResultToController(_controller, results);
   }
 

@@ -2,7 +2,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:junior_test/blocs/actions/ActionsItemQueryBloc.dart';
+import 'package:junior_test/blocs/actions/ActionHomeQueryBloc.dart';
 import 'package:junior_test/blocs/base/bloc_provider.dart';
 import 'package:junior_test/model/actions/PromoItem.dart';
 import 'package:junior_test/resources/api/RootType.dart';
